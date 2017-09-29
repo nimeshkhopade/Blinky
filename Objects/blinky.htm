@@ -3,7 +3,7 @@
 <title>Static Call Graph - [.\Objects\blinky.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image .\Objects\blinky.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060528: Last Updated: Fri Sep 29 18:44:51 2017
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060528: Last Updated: Fri Sep 29 18:58:28 2017
 <BR><P>
 <H3>Maximum Stack Usage =          8 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -629,11 +629,11 @@ Global Symbols
 <P><STRONG><a name="[5d]"></a>SystemInit</STRONG> (Thumb, 82 bytes, Stack size 0 bytes, system_stm32f4xx.o(i.SystemInit))
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32f407xx.o(.text)
 </UL>
-<P><STRONG><a name="[74]"></a>delay</STRONG> (Thumb, 46 bytes, Stack size 0 bytes, blinky.o(i.delay))
+<P><STRONG><a name="[74]"></a>delay</STRONG> (Thumb, 30 bytes, Stack size 0 bytes, blinky.o(i.delay))
 <BR><BR>[Called By]<UL><LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[6b]"></a>main</STRONG> (Thumb, 436 bytes, Stack size 0 bytes, blinky.o(i.main))
+<P><STRONG><a name="[6b]"></a>main</STRONG> (Thumb, 418 bytes, Stack size 0 bytes, blinky.o(i.main))
 <BR><BR>[Calls]<UL><LI><a href="#[74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay
 </UL>
 <BR>[Called By]<UL><LI><a href="#[6a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry_main

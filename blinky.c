@@ -1,9 +1,8 @@
 #include <stm32f4xx.h>
 long PD12, PD13, PD14, PD15;
-int i = 0, count = 0;
 void delay(){
 	int j = 0;
-	for(i = 0;i < 50000; i++)
+	for(int i = 0;i < 50000; i++)
 	{
 		for(j = 0; j < 500; j++){}
 	}
@@ -87,7 +86,6 @@ int main(void)
 		PD15 = GPIOD->ODR & 0x00008000;
 		delay();
 		x++;
-		count++;
 	}
 	GPIOD->ODR ^= GPIOD->ODR;
 	for(int k = 0; k < 4; k++){
@@ -99,7 +97,6 @@ int main(void)
 		PD14 = GPIOD->ODR & 0x00004000;
 		PD15 = GPIOD->ODR & 0x00008000;
 		delay();
-		count++;
 	}
 	GPIOD->ODR ^= GPIOD->ODR;
 } 
